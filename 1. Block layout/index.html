@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Block layout</title>
+</head>
+<body>
+  <div class="cards">
+    <div class="card">
+      <div class="card-illustration">
+        <!-- Types of modifiers for a tag:
+          Shape and indent modifier:
+            'card-illustration__tag_posTop'
+            'card-illustration__tag_posIndented'
+          Color modifier:
+            'card-illustration__tag_colorYellow'
+            'card-illustration__tag_colorPurple'
+            'card-illustration__tag_colorBlue' -->
+        <span class="card-illustration__tag card-illustration__tag_posIndented card-illustration__tag_colorYellow">Новинка</span>
+        <img src="./imgs/spb.jpg" alt="" class="card-illustration__img">
+      </div>
+      <div class="card-body">
+        <div class="card-body-tourTime">
+          <img src="./imgs/clock.svg" alt="" class="card-body-tourTime__clockIcon">
+          <span class="card-body-tourTime__time">2 часа</span>
+        </div>
+        <h2 class="card-body__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h2>
+        <div class="card-body-checks">
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Билет на целый день</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Неограниченное число катаний</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">6 остановок у главных достопримечательностей</p>
+          </div>
+          <div class="card-body-checks-check closest-cruise">
+            <div class="closest-cruise-wrapper">
+              <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+              <p class="card-body-checks-check__text">Ближайший рейс сегодня</p>
+            </div>
+            <div id="times" class="card-body-checks-check-times">
+              <span class="card-body-checks-check-times__time">12:00</span>
+              <span class="card-body-checks-check-times__time">13:00</span>
+              <span class="card-body-checks-check-times__time">14:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body-footer">
+          <div class="card-body-footer-prices">
+            <span class="card-body-footer-prices__price">900 ₽</span>
+            <span class="card-body-footer-prices__priceFromPier">1200 ₽ на причале</span>
+          </div>
+          <button class="card-body-footer__button">Подробнее</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-illustration">
+        <!-- Types of modifiers for a tag:
+          Shape and indent modifier:
+            'card-illustration__tag_posTop'
+            'card-illustration__tag_posIndented'
+          Color modifier:
+            'card-illustration__tag_colorYellow'
+            'card-illustration__tag_colorPurple'
+            'card-illustration__tag_colorBlue' -->
+        <span class="card-illustration__tag card-illustration__tag_posTop card-illustration__tag_colorPurple">Новинка</span>
+        <img src="./imgs/spb2.jpeg" alt="" class="card-illustration__img">
+      </div>
+      <div class="card-body">
+        <div class="card-body-tourTime">
+          <img src="./imgs/clock.svg" alt="" class="card-body-tourTime__clockIcon">
+          <span class="card-body-tourTime__time">3 часа</span>
+        </div>
+        <h2 class="card-body__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h2>
+        <div class="card-body-checks">
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Билет на целый день</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Неограниченное число катаний</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">6 остановок у главных достопримечательностей</p>
+          </div>
+          <div class="card-body-checks-check closest-cruise">
+            <div class="closest-cruise-wrapper">
+              <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+              <p class="card-body-checks-check__text">Ближайший рейс сегодня</p>
+            </div>
+            <div id="times" class="card-body-checks-check-times">
+              <span class="card-body-checks-check-times__time">12:00</span>
+              <span class="card-body-checks-check-times__time">13:00</span>
+              <span class="card-body-checks-check-times__time">14:00</span>
+              <span class="card-body-checks-check-times__time">15:00</span>
+              <span class="card-body-checks-check-times__time">16:00</span>
+              <span class="card-body-checks-check-times__time">17:00</span>
+              <span class="card-body-checks-check-times__time">18:00</span>
+              <span class="card-body-checks-check-times__time">19:00</span>
+              <span class="card-body-checks-check-times__time">20:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body-footer">
+          <div class="card-body-footer-prices">
+            <span class="card-body-footer-prices__price">900 ₽</span>
+            <span class="card-body-footer-prices__priceFromPier">1200 ₽ на причале</span>
+          </div>
+          <button class="card-body-footer__button">Подробнее</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-illustration">
+        <!-- Types of modifiers for a tag:
+          Shape and indent modifier:
+            'card-illustration__tag_posTop'
+            'card-illustration__tag_posIndented'
+          Color modifier:
+            'card-illustration__tag_colorYellow'
+            'card-illustration__tag_colorPurple'
+            'card-illustration__tag_colorBlue' -->
+        <span class="card-illustration__tag card-illustration__tag_posIndented card-illustration__tag_colorBlue">Новинка</span>
+        <img src="./imgs/spb3.jpg" alt="" class="card-illustration__img">
+      </div>
+      <div class="card-body">
+        <div class="card-body-tourTime">
+          <img src="./imgs/clock.svg" alt="" class="card-body-tourTime__clockIcon">
+          <span class="card-body-tourTime__time">2 часа</span>
+        </div>
+        <h2 class="card-body__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h2>
+        <div class="card-body-checks">
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Билет на целый день</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Неограниченное число катаний</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">6 остановок у главных достопримечательностей</p>
+          </div>
+          <div class="card-body-checks-check closest-cruise">
+            <div class="closest-cruise-wrapper">
+              <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+              <p class="card-body-checks-check__text">Ближайший рейс сегодня</p>
+            </div>
+            <div id="times" class="card-body-checks-check-times">
+              <span class="card-body-checks-check-times__time">12:00</span>
+              <span class="card-body-checks-check-times__time">13:00</span>
+              <span class="card-body-checks-check-times__time">14:00</span>
+              <span class="card-body-checks-check-times__time">15:00</span>
+              <span class="card-body-checks-check-times__time">16:00</span>
+              <span class="card-body-checks-check-times__time">17:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body-footer">
+          <div class="card-body-footer-prices">
+            <span class="card-body-footer-prices__price">900 ₽</span>
+            <span class="card-body-footer-prices__priceFromPier">1200 ₽ на причале</span>
+          </div>
+          <button class="card-body-footer__button">Подробнее</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-illustration">
+        <!-- Types of modifiers for a tag:
+          Shape and indent modifier:
+            'card-illustration__tag_posTop'
+            'card-illustration__tag_posIndented'
+          Color modifier:
+            'card-illustration__tag_colorYellow'
+            'card-illustration__tag_colorPurple'
+            'card-illustration__tag_colorBlue' -->
+        <span class="card-illustration__tag card-illustration__tag_posIndented card-illustration__tag_colorYellow">Круглый год</span>
+        <img src="./imgs/msk.jpg" alt="" class="card-illustration__img">
+      </div>
+      <div class="card-body">
+        <div class="card-body-tourTime">
+          <img src="./imgs/clock.svg" alt="" class="card-body-tourTime__clockIcon">
+          <span class="card-body-tourTime__time">1,5 часа</span>
+        </div>
+        <h2 class="card-body__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h2>
+        <div class="card-body-checks">
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Билет на целый день</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Неограниченное число катаний</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">6 остановок у главных достопримечательностей</p>
+          </div>
+          <div class="card-body-checks-check closest-cruise">
+            <div class="closest-cruise-wrapper">
+              <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+              <p class="card-body-checks-check__text">Ближайший рейс сегодня</p>
+            </div>
+            <div id="times" class="card-body-checks-check-times">
+              <span class="card-body-checks-check-times__time">12:00</span>
+              <span class="card-body-checks-check-times__time">13:00</span>
+              <span class="card-body-checks-check-times__time">14:00</span>
+              <span class="card-body-checks-check-times__time">15:00</span>
+              <span class="card-body-checks-check-times__time">16:00</span>
+              <span class="card-body-checks-check-times__time">17:00</span>
+              <span class="card-body-checks-check-times__time">18:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body-footer">
+          <div class="card-body-footer-prices">
+            <span class="card-body-footer-prices__price">900 ₽</span>
+          </div>
+          <button class="card-body-footer__button">Подробнее</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-illustration">
+        <img src="./imgs/msk2.jpg" alt="" class="card-illustration__img">
+      </div>
+      <div class="card-body">
+        <div class="card-body-tourTime">
+          <img src="./imgs/clock.svg" alt="" class="card-body-tourTime__clockIcon">
+          <span class="card-body-tourTime__time">2 часа</span>
+        </div>
+        <h2 class="card-body__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h2>
+        <div class="card-body-checks">
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Билет на целый день</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">Неограниченное число катаний</p>
+          </div>
+          <div class="card-body-checks-check">
+            <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+            <p class="card-body-checks-check__text">6 остановок у главных достопримечательностей</p>
+          </div>
+          <div class="card-body-checks-check closest-cruise">
+            <div class="closest-cruise-wrapper">
+              <img src="./imgs/checkmark.svg" alt="" class="card-body-checks-check__checkmark">
+              <p class="card-body-checks-check__text">Ближайший рейс сегодня</p>
+            </div>
+            <div id="times" class="card-body-checks-check-times">
+              <span class="card-body-checks-check-times__time">12:00</span>
+              <span class="card-body-checks-check-times__time">13:00</span>
+              <span class="card-body-checks-check-times__time">14:00</span>
+              <span class="card-body-checks-check-times__time">15:00</span>
+              <span class="card-body-checks-check-times__time">16:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body-footer">
+          <div class="card-body-footer-prices">
+            <span class="card-body-footer-prices__price">900 ₽</span>
+            <span class="card-body-footer-prices__priceFromPier">1200 ₽ на причале</span>
+          </div>
+          <button class="card-body-footer__button">Подробнее</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
