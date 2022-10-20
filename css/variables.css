@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/open_sans.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/open_sans.eot?#iefix") format("embedded-opentype"), url("../fonts/open_sans.woff2") format("woff2"), url("../fonts/open_sans.woff") format("woff"), url("../fonts/open_sans.ttf") format("truetype"), url("../fonts/open_sans.svg#open_sans") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../fonts/open_sans_semibold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/open_sans_semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/open_sans_semibold.woff2") format("woff2"), url("../fonts/open_sans_semibold.woff") format("woff"), url("../fonts/open_sans_semibold.ttf") format("truetype"), url("../fonts/open_sans_semibold.svg#open_sans_semibold") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "fakeSansRegular", sans-serif;
+  src: url("fonts/fakeSans_Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}/*# sourceMappingURL=variables.css.map */

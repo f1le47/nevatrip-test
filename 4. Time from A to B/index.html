@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Time from A to B</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Время из A в B</h1>
+    <div id="commonWrapper" class="commonWrapper">
+      <form action="">
+        <label for="route">Выберите направление</label>
+        <select name="route" id="routeSelect">
+          <option value="Не выбрано" class="notSelected" selected disabled>Не выбрано</option>
+          <option value="из A в B">из A в B</option>
+          <option value="из B в A">из B в A</option>
+          <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+        </select>
+      </form>
+      <form action="" id="timeForm" class="timeForm timeForm__hidden">
+        <label for="time">Выберите время</label>
+        <select name="time" id="timeSelect">
+          <option value="18:00(из A в B)" class="option__hidden">18:00(из A в B)</option>
+          <option value="18:30(из A в B)" class="option__hidden">18:30(из A в B)</option>
+          <option value="18:45(из A в B)" class="option__hidden">18:45(из A в B)</option>
+          <option value="19:00(из A в B)" class="option__hidden">19:00(из A в B)</option>
+          <option value="19:15(из A в B)" class="option__hidden">19:15(из A в B)</option>
+          <option value="21:00(из A в B)" class="option__hidden">21:00(из A в B)</option>
+          <option value="18:30(из B в A)" class="option__hidden">18:30(из B в A)</option>
+          <option value="18:45(из B в A)" class="option__hidden">18:45(из B в A)</option>
+          <option value="19:00(из B в A)" class="option__hidden">19:00(из B в A)</option>
+          <option value="19:15(из B в A)" class="option__hidden">19:15(из B в A)</option>
+          <option value="19:35(из B в A)" class="option__hidden">19:35(из B в A)</option>
+          <option value="21:50(из B в A)" class="option__hidden">21:50(из B в A)</option>
+          <option value="21:55(из B в A)" class="option__hidden">21:55(из B в A)</option>
+        </select>
+      </form>
+      <form action="" id="returnForm" class="returnForm returnForm__hidden">
+        <label for="return">Выберите время обратного отправления</label>
+        <select name="return" id="returnSelect">
+          <option value="18:30(из B в A)" class="option__hidden">18:30(из B в A)</option>
+          <option value="18:45(из B в A)" class="option__hidden">18:45(из B в A)</option>
+          <option value="19:00(из B в A)" class="option__hidden">19:00(из B в A)</option>
+          <option value="19:15(из B в A)" class="option__hidden">19:15(из B в A)</option>
+          <option value="19:35(из B в A)" class="option__hidden">19:35(из B в A)</option>
+          <option value="21:50(из B в A)" class="option__hidden">21:50(из B в A)</option>
+          <option value="21:55(из B в A)" class="option__hidden">21:55(из B в A)</option>
+        </select>
+      </form>
+      <form action="" onsubmit="return false;" id="numForm" class="numForm numForm__hidden">
+        <label for="num">Количество билетов</label>
+        <input id="numInput" name="num" type="number" class="amountTickets" value="1">
+        <button id="calculationButton" class="calculationButton">Посчитать</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

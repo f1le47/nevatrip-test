@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 1200px;
+}
+.container .title {
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.container .commonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .commonWrapper form {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.container .commonWrapper form label {
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+.container .commonWrapper form select, .container .commonWrapper form input {
+  padding: 10px;
+  font-family: sans-serif;
+  border-radius: 4px;
+}
+.container .commonWrapper form .option__hidden {
+  display: none;
+}
+.container .commonWrapper .timeForm {
+  transition: opacity 0.7s ease-in;
+}
+.container .commonWrapper .timeForm__hidden {
+  position: absolute;
+  left: -999px;
+  opacity: 0;
+}
+.container .commonWrapper .returnForm {
+  transition: opacity 0.7s ease-in;
+}
+.container .commonWrapper .returnForm__hidden {
+  position: absolute;
+  left: -999px;
+  opacity: 0;
+}
+.container .commonWrapper .numForm {
+  transition: opacity 0.7s ease-in;
+}
+.container .commonWrapper .numForm__hidden {
+  position: absolute;
+  left: -999px;
+  opacity: 0;
+}
+.container .commonWrapper .numForm .amountTickets {
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+.container .commonWrapper .numForm .calculationButton {
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(137, 149, 255);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container .commonWrapper .orderText {
+  font-family: sans-serif;
+  font-size: 16px;
+}/*# sourceMappingURL=styles.css.map */
